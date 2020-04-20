@@ -1,0 +1,21 @@
+repositories {
+    google()
+    maven {
+        url "http://dl.bintray.com/ironsource-mobile/android-sdk"
+    }
+    maven {
+        url "http://dl.bintray.com/ironsource-mobile/android-adapters/"
+    }
+}
+
+dependencies {
+    implementation 'com.ironsource.sdk:mediationsdk:6.15.0@jar'
+
+    // For FacebookAds
+    implementation 'com.ironsource.adapters:facebookadapter:4.3.12@jar'
+    implementation 'com.facebook.android:audience-network-sdk:5.8.0'
+
+    // For Admob - not worked
+    implementation 'com.google.android.gms:play-services-ads:17.1.0'
+    implementation 'com.ironsource.adapters:admobadapter:4.3.8@jar'
+}
